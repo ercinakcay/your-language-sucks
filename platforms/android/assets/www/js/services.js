@@ -51,10 +51,10 @@ angular.module('starter.services', [])
     },
     get: function(langId) {
       for (var i = 0; i < langs.length; i++) {
-        if (langs[i].id === parseInt(langId)) {
-          return langs[i];
+          if (langs[i].id === parseInt(langId)) {
+            return langs[i];
+          }
         }
-      }
       return null;
     }
   };

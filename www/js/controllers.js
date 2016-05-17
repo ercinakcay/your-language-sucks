@@ -18,18 +18,20 @@ angular.module('starter.controllers', [])
 })
 
 .controller('LangDetailCtrl', function($scope, $stateParams, Langs, $window) {
-  $scope.lang = Langs.get($stateParams.langId);
 
-   $scope.shareAnywhere = function(){
-        var message = {
-            text: $scope.lang.name,
-            image: $scope.lang.face,
-            url: $scope.lang.link
-        };
-        $window.socialmessage.send(message);
+    $scope.lang  = Langs.get($stateParams.langId);
+
+    $scope.shareAnywhere = function(){
+      message = {
+          text: $scope.lang.name,
+          image: 'https://cdn3.iconfinder.com/data/icons/luchesa-vol-9/128/Html-128.png',
+          url: $scope.lang.link
+      };
+      $window.socialmessage.send(message);
     };
 
     $scope.openBrowser = function() {
       $window.open($scope.lang.link, '_system');
     };
+
 });

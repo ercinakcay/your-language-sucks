@@ -57,9 +57,8 @@
     },
     "cordova-plugin-social-message": {
         "source": {
-            "type": "git",
-            "url": "https://github.com/leecrossley/cordova-plugin-social-message.git",
-            "subdir": "."
+            "type": "registry",
+            "id": "cordova-plugin-social-message"
         },
         "is_top_level": true,
         "variables": {}
