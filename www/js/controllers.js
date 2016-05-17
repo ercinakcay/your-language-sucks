@@ -33,5 +33,4 @@ angular.module('starter.controllers', [])
     $scope.openBrowser = function() {
       $window.open($scope.lang.link, '_system');
     };
-
 });
